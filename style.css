@@ -1,0 +1,79 @@
+body {
+    background-color: #fceabb; 
+    font-family: 'Comic Sans MS', cursive; 
+}
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.612); 
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding for content */
+    text-align: center; /* Center text */
+}
+.carousel-caption h5 {
+    color: #ff6b81; /* Title color */
+    font-size: 24px; /* Title font size */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carousel-caption p {
+    color: #333; /* Text color */
+    font-size: 18px; /* Text font size */
+}
+
+.carousel-item img {
+    border-radius: 0; /* Remove border-radius */
+    width: 100%; /* Set width to 100% */
+    height: auto; /* Auto height */
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    color: #ff6bbc; /* Button color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    font-size: 40px; /* Button icon size */
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #ff3f3f; /* Darker button color on hover */
+}
+
+
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 20px; 
+    }
+
+    .carousel-caption p {
+        font-size: 16px; 
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        font-size: 30px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        font-size: 30px; 
+    }
+}
+
+.carousel-item {
+    animation: flip-book 1s ease-in-out;
+}
+
+.carousel-item {
+    transition: transform 0.5s;
+}
+
+.carousel-item.next {
+    transform: rotateY(-180deg);
+}
+
+.carousel-item.prev {
+    transform: rotateY(180deg);
+}
